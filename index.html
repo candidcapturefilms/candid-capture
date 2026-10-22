@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Candid Capture creates thoughtful wedding photography and cinematic wedding films in Bangladesh. Tell us about your wedding and check availability.">
+  <meta name="description" content="Candid Capture — wedding photography and cinematic films in Bangladesh. Honest photographs, thoughtful films, and the real feeling of your wedding day.">
   <meta name="theme-color" content="#10100f">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Candid Capture | Wedding Photography & Cinematic Films">
-  <meta property="og:description" content="Honest photographs. Thoughtful films. The real feeling of your wedding day, preserved for a lifetime.">
-
-  <title>Candid Capture | Wedding Photography & Films</title>
+  <meta property="og:description" content="Your story, beautifully remembered. Wedding photography and cinematic films.">
+  <title>Candid Capture | Wedding Photography & Cinematic Films</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
@@ -30,11 +29,10 @@
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-image"></div>
-      <div class="hero-shade"></div>
+      <div class="hero-image" aria-hidden="true"></div><div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-content">
         <p class="eyebrow"><span></span> FOR THE MOMENTS THAT MATTER</p>
-        <h1>Your story,<br><em>beautifully</em> remembered.</h1>
+        <h1>Your story,<br><em>beautifully</em><br>remembered.</h1>
         <p class="hero-copy">Honest photographs. Thoughtful films. The real feeling of your wedding day, preserved for a lifetime.</p>
         <div class="hero-actions"><a class="button button-light" href="#work">Explore our work <span>↘</span></a><a class="text-link" href="#contact">Plan your wedding film ↗</a></div>
       </div>
@@ -55,11 +53,11 @@
         <a href="#contact" class="gallery-card img-three"><span class="gallery-label">03 / BEFORE FOREVER</span><span class="gallery-title">Pre-Wedding <b>↗</b></span></a>
         <a href="#contact" class="gallery-card img-four"><span class="gallery-label">04 / MOVING MEMORIES</span><span class="gallery-title">Cinematic Films <b>↗</b></span></a>
       </div>
-      <p class="gallery-hint">Replace these sample images with your own work before publishing.</p>
+      <p class="gallery-hint">These are sample photos. Replace them with your own photography before relying on the site as your final portfolio.</p>
     </section>
 
     <section class="film-feature">
-      <div class="film-backdrop"></div><div class="film-content">
+      <div class="film-backdrop" aria-hidden="true"></div><div class="film-content">
         <p class="eyebrow">THE FEELING, IN MOTION</p>
         <h2>Some memories<br>deserve to <em>move.</em></h2>
         <p>From the quiet moments before the ceremony to the last song of the night, we make wedding films with feeling at their centre.</p>
@@ -89,7 +87,7 @@
       <div class="contact-inner">
         <p class="eyebrow">YOUR STORY STARTS HERE</p>
         <h2>Let's make something<br><em>worth remembering.</em></h2>
-        <p>Tell us a little about your day. We’ll get back to you to discuss your plans, dates and coverage.</p>
+        <p>Tell us a little about your day. Your details will be prepared as a WhatsApp message so we can discuss your plans, dates and coverage.</p>
         <form id="bookingForm">
           <div class="form-grid">
             <label>Your name<input name="name" required placeholder="Full name"></label>
@@ -99,7 +97,8 @@
           </div>
           <label>Tell us about your plans<textarea name="message" rows="3" placeholder="Location, event details, photography or film needs..."></textarea></label>
           <button class="button button-light submit-button" type="submit">Send inquiry <span>↗</span></button>
-          <p class="form-note">This demo opens WhatsApp with your inquiry. Add your WhatsApp number in <code>script.js</code> before publishing.</p>
+          <p class="form-note">The inquiry opens WhatsApp with your message. You can update the WhatsApp number in the clearly labelled settings near the top of script.js.</p>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
@@ -108,7 +107,7 @@
   <footer class="footer">
     <a class="brand footer-brand" href="#home"><span class="brand-mark">CC</span><span class="brand-name">CANDID <b>CAPTURE</b><small>PHOTOGRAPHY & CINEMATOGRAPHY</small></span></a>
     <p>Life, unscripted.</p>
-    <div class="footer-links"><a id="instagramLink" href="#contact">Instagram</a><a id="facebookLink" href="#contact">Facebook</a><a href="#contact">WhatsApp</a></div>
+    <div class="footer-links"><a id="instagramLink" href="#contact">Instagram</a><a id="facebookLink" href="https://www.facebook.com/candidcapturefilms" target="_blank" rel="noopener">Facebook</a><a id="whatsappLink" href="#contact">WhatsApp</a></div>
     <small>© <span id="year"></span> Candid Capture. Made with care.</small>
   </footer>
   <script src="script.js"></script>
